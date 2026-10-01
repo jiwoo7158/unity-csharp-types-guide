@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko" data-baseurl="{{ site.baseurl }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">&lt;T&gt;</span><span>{{ site.title }}</span></a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" data-nav-toggle>☰</button>
+      <nav class="topnav" data-nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/all-types/' | relative_url }}">전체 타입</a>
+        <a href="{{ '/cheatsheet/' | relative_url }}">치트시트</a>
+        <a href="{{ '/confusing-types/' | relative_url }}">헷갈리는 타입</a>
+        <a href="{{ '/examples/' | relative_url }}">실전 예제</a>
+        <a href="{{ '/serialization/' | relative_url }}">직렬화</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="search-box">
+        <label for="quick-search">빠른 이동</label>
+        <input id="quick-search" data-search-input type="search" placeholder="IReadOnlyList, Vector3..." autocomplete="off">
+        <div class="search-results" data-search-results hidden></div>
+      </div>
+      <div class="side-section">
+        <div class="side-title">기초</div>
+        <a href="{{ '/type-system/' | relative_url }}">타입 시스템 이해</a>
+        <a href="{{ '/categories/csharp-basics/' | relative_url }}">C# 기본 타입</a>
+        <a href="{{ '/categories/collections/' | relative_url }}">컬렉션 / 인터페이스</a>
+      </div>
+      <div class="side-section">
+        <div class="side-title">Unity 타입</div>
+        <a href="{{ '/categories/unity-value-types/' | relative_url }}">수학 / 값 타입</a>
+        <a href="{{ '/categories/unity-object-model/' | relative_url }}">Object / Component 계층</a>
+        <a href="{{ '/categories/rendering-assets/' | relative_url }}">렌더링 / 에셋</a>
+        <a href="{{ '/categories/physics/' | relative_url }}">물리 3D / 2D</a>
+        <a href="{{ '/categories/animation-audio/' | relative_url }}">애니메이션 / 오디오</a>
+        <a href="{{ '/categories/coroutine-async/' | relative_url }}">코루틴 / 비동기</a>
+        <a href="{{ '/categories/runtime-scene-input/' | relative_url }}">런타임 / 씬 / 입력</a>
+      </div>
+      <div class="side-section">
+        <div class="side-title">정리</div>
+        <a href="{{ '/sources/' | relative_url }}">공식 문서 출처</a>
+        <a href="{{ '/deploy/' | relative_url }}">배포 방법</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      {% if page.eyebrow %}<div class="eyebrow">{{ page.eyebrow }}</div>{% endif %}
+      {{ content }}
+      <footer class="page-footer">Unity C# Types Guide · 개인 학습과 프로젝트 문서화를 위한 정적 페이지</footer>
+    </main>
+  </div>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>
