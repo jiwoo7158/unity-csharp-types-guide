@@ -9,7 +9,7 @@ eyebrow: Study Notes
 
 `int`, `float`처럼 바로 이해되는 기본 타입부터 `IReadOnlyList<T>`, `Dictionary<TKey, TValue>`, `Vector3`, `Quaternion`, `GameObject`, `Rigidbody`, `RaycastHit`, `Coroutine`, `Awaitable`까지 Unity 코드를 읽다가 자주 마주치는 타입을 한 곳에 정리했습니다.
 
-이 문서는 API 멤버를 전부 외우는 사전보다는 **“이 타입은 어떤 종류이고, 왜 쓰며, 무엇과 헷갈리는가?”**를 파악하는 데 초점을 둡니다.
+이 문서는 API 멤버를 전부 외우는 사전보다는 **“이 타입은 어떤 종류이고, 왜 쓰며, 무엇과 헷갈리고, 실제 코드에서는 어떻게 쓰이는가?”**를 파악하는 데 초점을 둡니다. 전체 타입 페이지는 빠른 색인으로 간결하게 유지하고, 각 카테고리 문서에서는 핵심 타입을 여러 문단과 코드 예제로 자세히 설명합니다.
 
 <div class="kpi">
 <span><b>Unity 6.x</b> 기준</span><span><b>C#/.NET</b> 기본 포함</span><span><b>별도 패키지</b> 핵심 범위에서 제외</span><span><b>직렬화 여부</b> 별도 정리</span>

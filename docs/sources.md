@@ -48,3 +48,18 @@ eyebrow: References
 Unity는 버전이 올라가며 API 이름이 바뀌거나 권장 방식이 변할 수 있습니다. 예를 들어 Unity 6에서는 `Rigidbody.linearVelocity`, `Rigidbody.linearDamping` 같은 명칭을 현재 문서에서 확인할 수 있습니다. 오래된 블로그/영상의 `velocity`, `drag` 중심 설명과 섞일 때는 **현재 사용하는 Unity 버전의 Scripting API**를 우선 확인하세요.
 
 문서 조사 기준일: **2026-10-02**.
+
+## 이번 상세화에서 추가로 확인한 Unity 6 문서
+
+- [PhysicsMaterial](https://docs.unity3d.com/ScriptReference/PhysicsMaterial.html)
+- [PhysicsMaterial2D](https://docs.unity3d.com/ScriptReference/PhysicsMaterial2D.html)
+- [CharacterController](https://docs.unity3d.com/ScriptReference/CharacterController.html)
+- [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html)
+- [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html)
+- [SkinnedMeshRenderer](https://docs.unity3d.com/ScriptReference/SkinnedMeshRenderer.html)
+- [Rigidbody2D](https://docs.unity3d.com/ScriptReference/Rigidbody2D.html)
+- [SceneManager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html)
+- [Animator](https://docs.unity3d.com/ScriptReference/Animator.html)
+- [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html)
+
+상세 설명은 공식 문서의 정의를 그대로 나열하기보다, 타입의 **역할·관계·사용 맥락을 학습하기 쉽게 재구성**했습니다. 정확한 전체 멤버 목록은 각 공식 API 페이지를 기준으로 확인하세요.
